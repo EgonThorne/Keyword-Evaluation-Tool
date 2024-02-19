@@ -1,0 +1,71 @@
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background-color: #e3e3e3;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review-section h2 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.review-box {
+    background-color: #d9d9d9;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.separator {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #000, transparent);
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.column input[type="number"],
+.column input[type="text"],
+.column select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

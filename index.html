@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键词评估工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>关键词评估工具</h1>
+    </header>
+    <div class="container">
+        <section class="review-section" id="trap-review">
+            <h2>标准审查</h2>
+            <div class="review-box">
+                <div class="column">
+                    <label for="trend">流行趋势</label>
+                    <select id="trend">
+                        <!-- <option value="">选择趋势</option> -->
+                        <option value="seasonal">季节性</option>
+                        <option value="non-seasonal">非季节性</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="google-direct">谷歌直达</label>
+                    <select id="google-direct">
+                        <!-- <option value="">请选择</option> -->
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="special-terms">特殊词</label>
+                    <select id="special-terms">
+                        <!-- <option value="">请选择</option> -->
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section class="review-section" id="data-review">
+            <h2>数据审查</h2>
+            <div class="review-box">
+                <div class="column">
+                    <label for="cpc">CPC</label>
+                    <input type="number" id="cpc" placeholder="填写CPC">
+                </div>
+                <div class="column">
+                    <label for="kd">KD</label>
+                    <input type="number" id="kd" placeholder="填写KD">
+                </div>
+                <div class="column">
+                    <label for="search-volume">搜索量</label>
+                    <input type="number" id="search-volume" placeholder="填写搜索量">
+                </div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section class="review-section" id="final-result">
+            <h2>最终结果</h2>
+            <div class="review-box">
+                <div class="column">
+                    <label for="result">最终评估结果</label>
+                    <!-- <input type="text" id="result" placeholder="填写最终评估结果"> -->
+                    <select id="special-terms">
+                        <!-- <option value="">请选择</option> -->
+                        <option value="yes">继续进行</option>
+                        <option value="no">放弃</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>© 2024 关键词评估工具</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
